@@ -1,0 +1,178 @@
+/* Universal Style */
+*{
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+  font-size: medium;
+  font-family: monospace;
+
+}
+
+/* Header Styles */
+
+body {
+   background-image: url('background.jpg');
+   background-size: cover;
+   opacity: 100%;
+}
+
+header {
+  padding: 20px;
+  margin: 30px;
+  box-shadow: 2px 2px rgba(164, 156, 142, 0.67);
+  border-radius: 20px;
+  background-color: gray;
+  border: 2px solid black;
+
+}
+
+header > h1 {
+  font-size: xx-large;
+  padding: 20px;
+  margin: 30;
+  box-shadow: 2px 2px rgba(164, 156, 142, 0.67);
+  border-radius: 30px;
+  background-color: whitesmoke;
+  display: grid;
+  border: 2px solid black;
+  font-weight: bold;
+  
+}
+
+header > small {
+  font-style: italic;
+  padding: 2px 2px;
+  margin: 20px;
+  box-shadow: 2px 2px rgba(164, 156, 142, 0.67);
+  border-radius: 20px;
+  background-color: whitesmoke;
+  display: grid;
+  border: 2px solid black;
+}
+
+.list-item{
+  padding: 20px 20px;
+  margin: 0px;
+  box-shadow: 2px 2px rgba(164, 156, 142, 0.67);
+  border-radius: 20px;
+  background-color: gray;
+  display: grid;
+  border: 2px solid black;
+}
+
+
+
+#studentForm{
+  padding: 20px 20px;
+  margin: 30px;
+  box-shadow: 2px 2px rgba(164, 156, 142, 0.67);
+  border-radius: 20px;
+  background-color:gray;
+  border: 2px solid black;
+
+}
+
+
+
+
+#formContainer > #studentForm > :last-child > button{
+  display: flex;
+  justify-self: center;
+  padding: 5px 5px;
+  width: 300px;
+  background-color: whitesmoke;
+  border: 2px solid rgb(0, 0, 0);
+  padding: 5px 5px;
+  margin: 5px;
+  font-size: large;
+  font-weight: bold;
+  cursor: pointer;
+  justify-content: center;
+}
+
+#formContainer > #studentForm > :last-child > button:hover{
+  background-color: rgb(0, 0, 0);
+  color: whitesmoke;
+  text-transform: uppercase;
+}
+
+#formContainer > #studentForm > :last-child > button:hover::after{
+  background-color: rgb(0, 0, 0);
+  color: whitesmoke;
+  content: ": JUST DO IT!";
+  
+}
+
+#formContainer > #studentForm > .input-fields > label{
+  font-style: italic;
+  font-size: large;
+  font-weight: bold;
+}
+
+
+#formContainer > #studentForm > .input-fields{
+  display: flex;
+  flex-direction: column;
+}
+
+
+#formContainer {
+  display: grid;
+}
+
+#studentList{
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 15px;
+  margin: 30px;
+} 
+
+#studentList > .list-item > h2{
+  font-style: italic;
+  color: black;
+  font-size: x-large;
+  font-weight: bold;
+}
+
+
+#studentList > .list-item > p{
+  font-style: italic;
+  color: aliceblue;
+  font-size: large;
+}
+
+#studentList > .list-item > button{
+  display: flex;
+  justify-self: center;
+  padding: 5px 5px;
+  max-width: 100%;
+  width: 100%;
+  background-color: whitesmoke;
+  border: 2px solid rgb(0, 0, 0);
+  margin: 0px;
+  font-size: large;
+  font-weight: bold;
+  cursor: pointer;
+  justify-content: center;
+}
+
+
+
+@media(width > 100px) and (width <= 600px){
+  #studentList > .list-item{
+    grid-column: span 12;
+
+  } 
+ 
+}
+
+@media(width >= 1000px){
+  #studentList > .list-item{
+    grid-column: span 2;
+
+  } 
+ 
+}
+
+
+
